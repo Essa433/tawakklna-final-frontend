@@ -15,6 +15,7 @@ import { SignupPage } from './pages/SignupPage';
 
 export function App() {
   const [users, setUsers] = useState([])
+  const [profile, setProfile] = useState({})
   const [Service, setService] = useState([])
   const [featuredService, setFeaturedService] = useState([])
   const [DataPanel, setDataPanel] = useState([])
@@ -33,6 +34,8 @@ export function App() {
   const getUsers = async () => {
     const response = await axios.get("http://localhost:3002/users/users")
     setUsers(response.data)
+    let userInfo = JSON.parse(localStorage.getItem("userInfo") || "{}")
+    setProfile(response.data.find((u : any) => u.user_id == userInfo.userId))
     // console.log(Service);
   }
 
@@ -69,6 +72,7 @@ export function App() {
 
   const store = {
     users,
+    profile ,
     Service,
     DataPanel,
     featuredService,

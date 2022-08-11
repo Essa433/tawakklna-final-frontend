@@ -1,13 +1,17 @@
 import axios from "axios"
 import firebase from "firebase"
+import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import "../../styles/signup.css"
+import { twkContext } from "../../Utils/TwkContext"
 
 
 export function SignUpComponant() {
 
     const navigate = useNavigate()
-
+    const {users} = useContext(twkContext)
+    console.log(users);
+    
 
     const handleSignUp = async (e: any) => {
 
@@ -44,12 +48,16 @@ export function SignUpComponant() {
             photo: form.elements.photo.value,
         }
 
-
-
+        let usersEmail = users.map((u : any) => u.email)
+        let usersNationalId = users.map((u : any) => u.nationalId)
+        if(usersEmail.includes(form.elements.Email.value)) return alert("The User is Exist");
+        if(usersNationalId.includes(form.elements.NationalId.value)) return alert("The User is Exist");
+        
+        
         // ------------- send data user to datbase --------------
         await axios.post("http://localhost:3002/users/users", body)
 
-        navigate("/home")
+        navigate("/login")
 
     }
 
@@ -98,8 +106,8 @@ export function SignUpComponant() {
             <div>
                 <label htmlFor="">Blood type</label>
                 <input type="text" name="Blood" />
-            </div>
-            <div>
+            </div> 
+             <div>
 
                 <select name="Marital">
                     <option value="Married"> Married</option>
@@ -123,8 +131,8 @@ export function SignUpComponant() {
 
 
 
-
-            {/* <div>
+{/* 
+            <div>
                 <label htmlFor="">national id photo</label>
                 <input type="file" name="nationalPhoto" />
             </div>

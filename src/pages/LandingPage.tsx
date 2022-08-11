@@ -1,4 +1,5 @@
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 import "../styles/landing.css";
 export function LandingPage() {
     return (
@@ -23,7 +24,7 @@ export function LandingPage() {
 
                 <div className='btn-landing-page'>
                     <button className="btn-nav-sin"> Sign up </button>
-                    <button className="btn-nav-log"> Login <AiOutlineArrowRight /> </button>
+                    <Link to="/login">  <button className="btn-nav-log"> Login <AiOutlineArrowRight /> </button></Link>
                 </div>
             </nav>
 
