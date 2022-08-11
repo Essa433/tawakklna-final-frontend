@@ -1,0 +1,50 @@
+/* puplic services */
+
+.container-service-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 200px;
+    gap: 20px;
+    
+}
+
+
+/* .content-sub-box-servic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 200px;
+    gap: 20px;
+
+}
+
+h2 {
+    margin-left: 250px;
+} */
+
+/* .containar-cards-inservices{
+    
+} */
+.content-sub-box-servic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+    color: rgb(122, 134, 146);
+
+}
+
+/* .contain-service-box {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+} */

@@ -1,0 +1,77 @@
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Questrial&family=Roboto+Mono:wght@100;200;400&display=swap');
+
+.nav-contain-landing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 30px 5px; */
+    padding: 15px;
+    color: rgb(165, 164, 164);
+    background-color: rgb(56, 57, 57);
+    font-family: 'Pacifico', cursive;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.sub-title-nav {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.sub-title-nav:hover {
+    cursor: pointer;
+
+
+}
+
+
+.btn-nav-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: bold;
+    gap: 10px;
+    cursor: pointer;
+    border: 3px solid #007865;
+    background-color: #007865;
+    color: azure;
+
+}
+
+.btn-nav-log:hover {
+    background-color: #00ab90;
+    cursor: pointer;
+}
+
+.btn-landing-page {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-nav-sin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: bold;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #007865;
+    color: rgb(165, 164, 164);
+}
+
+.btn-nav-sin:hover {
+    background-color: #007865;
+    cursor: pointer;
+}
