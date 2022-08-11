@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './styles/loginSign.css';
+import './styles/login.css';
 import axios from "axios"
 import { useState } from "react"
 import { Route, Routes } from 'react-router-dom';
-import { LoginSignupPage } from './pages/LoginSignPage';
+import { LoginPage } from './pages/LoginPage';
 import { ProfilePage } from './pages/Profile';
 import { LandingPage } from './pages/LandingPage';
 import { HomePage } from './pages/HomePage';
@@ -89,7 +89,7 @@ export function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='/sign-up' element={<SignupPage />} />
         <Route path='/home' element={<HomePage />} />
-        <Route path='/login' element={<LoginSignupPage />} />
+        <Route path='/login' element={<LoginPage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/services' element={<ServicePage />} />
         <Route path='/datapanel' element={<DataPanelPage />} />

@@ -8,22 +8,22 @@ export function Navbar() {
         <>
             <nav className="nav-contain">
 
-                <div>
+                <Link to="/home"> <div>
                     <img className="nav-img" src="https://ta.sdaia.gov.sa/images/NewImages/logo.svg" alt="" />
-                </div>
+                </div></Link>
                 <div className="sub-title-nav">
 
-                    <div>
+                    <Link to="/home">  <div>
                         <p>Home Page</p>
+                    </div></Link>
+                    <div>
+                        <Link to="/digitalwallet"><p>Digital Wallet</p></Link>
                     </div>
                     <div>
-                        <p>Digital Wallet</p>
+                       <Link to="/services"><p>Services</p></Link> 
                     </div>
                     <div>
-                        <p>Services</p>
-                    </div>
-                    <div>
-                        <p>Data Panel</p>
+                        <Link to="/datapanel"><p>Data Panel</p></Link>
                     </div>
                     <div>
                         <p>Contact us</p>

@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(https://media.istockphoto.com/vectors/abstract-white-background-geometric-texture-vector-id1298706128?k=20&m=1298706128&s=612x612&w=0&h=9hGAk9BklhIxvSrrUEaQRsEcZq8-R3n_z3uGzFNSkhI=) no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
   /* background-color: rgb(64, 65, 65); */
 
   /* background-color: black; */
@@ -16,7 +24,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.continar-homepage-all{
+
+.continar-homepage-all {
   display: flex;
   flex-direction: column;
 }

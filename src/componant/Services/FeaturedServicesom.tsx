@@ -17,11 +17,11 @@ export function FeaturedServiceComponant() {
 
     return (
         <>
-            <h1>featured Service Page</h1>
-            <div className='container-service-card'>
+            {/* <h1>featured Service Page</h1> */}
+            <div className='container-service-card-featured'>
                 {featuredService.map((featuredService: any) => (
 
-                    <div className='content-sub-box-servic'>
+                    <div className='content-sub-box-featured-servic'>
 
                         <div>
                             {featuredService.aftar}
@@ -31,11 +31,10 @@ export function FeaturedServiceComponant() {
                         </div>
                         <div className='content-eduction-box'>
                             <h3> {featuredService.service_type}</h3>
-                            <hr />
                         </div>
-                        <div>
+                        {/* <div>
                             {featuredService.featured_service}
-                        </div>
+                        </div> */}
 
 
                     </div>

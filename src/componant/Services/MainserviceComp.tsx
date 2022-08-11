@@ -47,9 +47,9 @@ export default function ServicesComponant() {
                         <div>
                             {Service.service_type}
                         </div>
-                        <div>
+                        {/* <div>
                             {Service.featured_service}
-                        </div>
+                        </div> */}
 
                     </div>
                 ))}

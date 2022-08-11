@@ -10,10 +10,10 @@ export function HomePage() {
                 <div>
                     <Navbar />
                 </div>
-<div>
+                <div>
 
-                <HomeComponent />
-</div>
+                    <HomeComponent />
+                </div>
 
                 {/* <div>
                 <Sidebar />

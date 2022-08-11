@@ -10,6 +10,12 @@
     gap: 20px;
     
 }
+.container-service-card-featured{
+    display: flex;
+    align-items: center;
+    /* margin: 30px; */
+    gap: 20px;
+}
 
 
 /* .content-sub-box-servic {
@@ -41,6 +47,17 @@ h2 {
     background-color: transparent;
     color: rgb(122, 134, 146);
 
+}
+.content-sub-box-featured-servic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+    color: rgb(122, 134, 146);
 }
 
 /* .contain-service-box {
