@@ -92,3 +92,52 @@ h2 {
     width: 50px;
     height: 50px;
 }
+.popup-falliat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(240, 237, 237);
+    border-radius:10px;
+    padding: 20px;
+    margin-top: -250px;
+    margin-left: 200px;
+
+}
+.search-inservice{
+    /* width: 450px;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 50px;
+}
+.search-ser{
+    width: 450px;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px; 
+}
+.pup-p-p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-pupup{
+    background-color: #1fa99a;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.btn-pupup:hover{
+background-color:#1fa99a ;
+opacity: 0.5;
+}

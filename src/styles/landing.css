@@ -1,14 +1,18 @@
 /* navbar */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Questrial&family=Roboto+Mono:wght@100;200;400&display=swap');
 
+/* a{
+    text-decoration: none;
+
+} */
 .nav-contain-landing {
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* margin: 30px 5px; */
     padding: 15px;
-    color: rgb(165, 164, 164);
-    background-color: rgb(56, 57, 57);
+    color: gray;
+    background-color: rgb(238, 239, 239);
     font-family: 'Pacifico', cursive;
     font-family: 'Questrial', sans-serif;
     font-family: 'Roboto Mono', monospace;
@@ -27,6 +31,10 @@
 
 
 }
+.about-twa-p{
+    text-decoration: none;
+    color: gray;
+}
 
 .cont-vide-place {
     display: grid;
@@ -35,15 +43,18 @@
     align-items: center;
     margin: 90px 70px 0px 70px;
 }
-.h1-land{
+
+.h1-land {
     font-size: 40px;
 }
-.h2-land{
+
+.h2-land {
     font-size: 30px;
     color: gray;
-cursor: pointer;
+    cursor: pointer;
 }
-.h2-land:hover{
+
+.h2-land:hover {
     background-color: white;
     cursor: pointer;
     display: inline;
@@ -56,8 +67,141 @@ cursor: pointer;
 
 
 }
-.left-vid{
+
+.header-land-photo {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-icon-store-huaw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    padding: 10px;
+    /* background-color: black; */
+    /* background: url(https://ta.sdaia.gov.sa/images/NewImages/huaweigalary.png); */
+    background: url(https://ta.sdaia.gov.sa/images/NewImages/huaweigalary.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    border: none;
+    width: 310px;
+    height: 95px;
+    border-radius: 10px;
+    /* margin-top: 200px; */
+    /* margin-left: -80px; */
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+.btn-icon-store-apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    padding: 10px;
+    /* background-color: black; */
+    /* background: url(https://ta.sdaia.gov.sa/images/NewImages/huaweigalary.png); */
+    background: url(https://ta.sdaia.gov.sa/images/NewImages/appstore.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    border: none;
+    width: 310px;
+    height: 90px;
+    border-radius: 10px;
+    /* margin-top: 200px; */
+    /* margin-left: -80px; */
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+.btn-icon-store-apple:hover{
+    opacity: 0.5;
+}
+.btn-icon-store-sum:hover{
+    opacity: 0.5;
+}
+.btn-icon-store-huaw:hover{
+    opacity: 0.5;
+}
+
+.btn-icon-store-sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    padding: 10px;
+    /* background-color: black; */
+    /* background: url(https://ta.sdaia.gov.sa/images/NewImages/huaweigalary.png); */
+    background: url(https://ta.sdaia.gov.sa/images/NewImages/googleplay.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    border: none;
+    width: 310px;
+    height: 90px;
+    border-radius: 10px;
+    /* margin-top: 200px; */
+    /* margin-left: -80px; */
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+
+.btn-icon-store:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-1-header-landingpage {
+    width: 1000px;
+    height: 650px;
+}
+
+.btn-icons {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 220px; */
+    margin-left: -290px;
+}
+
+.left-vid {
     margin-left: 100px;
+}
+
+.h1-h1-downlaod {
+    margin-top: 200px;
+    margin-left: -280px;
+    /* color: #007865; */
+    font-size: 20px;
+}
+
+.btn-icons-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 .btn-nav-log {
@@ -79,6 +223,7 @@ cursor: pointer;
 .btn-nav-log:hover {
     background-color: #00ab90;
     cursor: pointer;
+    /* color: white; */
 }
 
 .btn-landing-page {
@@ -99,10 +244,36 @@ cursor: pointer;
     cursor: pointer;
     background-color: transparent;
     border: 3px solid #007865;
-    color: rgb(165, 164, 164);
+    color:#007865
 }
 
 .btn-nav-sin:hover {
     background-color: #007865;
     cursor: pointer;
+    color: white;
+}
+
+.mobile-photo {
+    width: 650px;
+    height: 750px;
+    /* margin-left: 200px; */
+}
+
+.container-about-tawa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0px 20px;
+}
+
+.h1-about {
+    font-size: 40px;
+    color: #007865;
+}
+
+.p-about {
+    font-size: 25px;
+    max-width: 70ch;
 }

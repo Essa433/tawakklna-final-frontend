@@ -38,27 +38,12 @@ export function LoginComponant() {
 		< >
 
 
-			{/* <form className="form-box-login" onSubmit={handleSubmit(handleLogin)}>
-
-				<h3>Login</h3>
-
-				<div>
-					<label htmlFor="">National Id</label>
-					<input type="text" placeholder="Enter your national id..." {...register("nationalId", { required: true })} />
-					{errors.nationalId && <p>Please check the National Id</p>}
-				</div>
-				<div>
-					<label htmlFor="">Password</label>
-					<input type="text" placeholder="Enter your password..."  {...register("password", { required: true })} />
-					{errors.nationalId && <p>Please check the Password</p>}
-				</div>
-				<div>
-					<button>Login</button>
-				</div>
-			</form> */}
 
 			<div className="login-box">
-				<h2>Login</h2>
+				<div className="img-logo">
+					<img src="/TWK.png" alt="" width={100} height={100} />
+				</div>
+				<h2 className="h2-loging">Login</h2>
 				<form onSubmit={handleSubmit(handleLogin)}>
 					<div className="user-box">
 						<input type="text" {...register("nationalId", { required: true })} />
@@ -67,16 +52,21 @@ export function LoginComponant() {
 					</div>
 
 					<div className="user-box">
-						<input type="password" {...register("password", { required: true })} />
+						<input type="password" {...register("password", { required: true,  })} />
 						<label>Password</label>
+						{errors.password && <p>Please check the National Id</p>}
+
 					</div>
-					<button>
+					<div className="btn-gocennn">
+
+					<button className="btn-login-login-w">
 						<span></span>
 						<span></span>
 						<span></span>
 						<span></span>
 						Submit
 					</button>
+					</div>
 				</form>
 			</div>
 

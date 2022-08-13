@@ -28,8 +28,6 @@ export function DigitalWalletComponant() {
                             <img className="decum-image" src={DigitalWallet.photo} alt="" />
                         </div>
 
-
-
                     </div>
 
                 ))}

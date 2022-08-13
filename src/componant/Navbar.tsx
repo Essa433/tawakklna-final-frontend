@@ -16,21 +16,24 @@ export function Navbar() {
                 </div></Link>
                 <div className="sub-title-nav">
 
-                    <Link to="/home">  <div>
+                    <Link style={{ textDecoration: 'none', color: 'gray' }} to="/home">  <div>
                         <p>Home Page</p>
                     </div></Link>
                     <div>
-                        <Link to="/digitalwallet"><p>Digital Wallet</p></Link>
+                        <Link style={{ textDecoration: 'none', color: 'gray' }} to="/digitalwallet"><p>Digital Wallet</p></Link>
                     </div>
                     <div>
-                        <Link to="/services"><p>Services</p></Link>
+                        <Link style={{ textDecoration: 'none', color: 'gray' }} to="/services"><p>Services</p></Link>
                     </div>
                     <div>
-                        <Link to="/datapanel"><p>Data Panel</p></Link>
+                        <Link style={{ textDecoration: 'none', color: 'gray' }} to="/datapanel"><p>Data Panel</p></Link>
                     </div>
                     <div>
+                        <Link style={{ textDecoration: 'none', color: 'gray' }} to="/profile"><p>Profile</p></Link>
+                    </div>
+                    {/* <div>
                         <p>Contact us</p>
-                    </div>
+                    </div> */}
 
                 </div>
                 <div>

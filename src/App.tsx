@@ -32,8 +32,11 @@ export function App() {
 
   const Logout = () => {
     localStorage.removeItem('token');
+    localStorage.removeItem("userInfo")
     navigate('/login')
   }
+
+
 
   // ------------------ get Users ------------------
   const getUsers = async () => {
@@ -43,6 +46,8 @@ export function App() {
     setProfile(response.data.find((u: any) => u.user_id == userInfo.userId))
     // console.log(Service);
   }
+
+  
 
   // ------------- services -------------------------
 

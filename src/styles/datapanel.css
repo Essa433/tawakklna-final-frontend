@@ -263,4 +263,5 @@ span {
 }
 .descrypton-datapanel{
     text-align: center;
+    max-width: 40ch;
 }

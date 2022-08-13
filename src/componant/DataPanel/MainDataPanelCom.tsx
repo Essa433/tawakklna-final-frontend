@@ -29,7 +29,7 @@ export function DatapanelComponant() {
                             <h3> {DataPanel.Data_title}</h3>
                             <hr />
                         </div>
-                        <div className='descrypton-datapanel'>
+                        <div>
                             {DataPanel.descryption}
                         </div>
                         {/* <div>
