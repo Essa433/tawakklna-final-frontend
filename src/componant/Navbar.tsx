@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BiSearchAlt2 } from 'react-icons/bi';
 
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css";
+import { twkContext } from '../Utils/TwkContext';
 export function Navbar() {
+    const { Logout } = useContext(twkContext)
     return (
         <>
             <nav className="nav-contain">
@@ -20,7 +23,7 @@ export function Navbar() {
                         <Link to="/digitalwallet"><p>Digital Wallet</p></Link>
                     </div>
                     <div>
-                       <Link to="/services"><p>Services</p></Link> 
+                        <Link to="/services"><p>Services</p></Link>
                     </div>
                     <div>
                         <Link to="/datapanel"><p>Data Panel</p></Link>
@@ -28,9 +31,7 @@ export function Navbar() {
                     <div>
                         <p>Contact us</p>
                     </div>
-                    <div>
-                        <p>View more</p>
-                    </div>
+
                 </div>
                 <div>
                 </div>
@@ -38,7 +39,7 @@ export function Navbar() {
                     <div>
                         <input className="search-nav" type="text" name="search" placeholder="Search..." />
                     </div>
-                    <button className="btn-nav-logout"> Login <AiOutlineArrowRight /> </button>
+                    <button onClick={Logout} className="btn-nav-logout"> Logout <AiOutlineArrowRight /> </button>
                 </div>
             </nav>
         </>

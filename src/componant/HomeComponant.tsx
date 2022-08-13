@@ -14,11 +14,11 @@ export function HomeComponent() {
     return (
 
         <div className="cont-cont-homecomponent">
-            <div>
+            <div className="left-side-contain">
                 <div className="contain-task-home">
                     <h3>Tasks</h3>
                     <div className="container-box-task">
-                        <div className="task-box">
+                        <div className="task-box1">
                             <p className="p-red-box">
                                 <div>
                                     <AiOutlineIdcard size={50} />
@@ -27,7 +27,7 @@ export function HomeComponent() {
                                 Since 188 days</p>
                             <p>driving licences</p>
                         </div>
-                        <div className="task-box">
+                        <div className="task-box2">
                             <p className="p-grean-box">
                                 <div>
                                     <GoCreditCard size={50} />

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './styles/login.css';
 import axios from "axios"
 import { useState } from "react"
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import { LoginPage } from './pages/LoginPage';
 import { ProfilePage } from './pages/Profile';
 import { LandingPage } from './pages/LandingPage';
@@ -20,6 +20,7 @@ export function App() {
   const [featuredService, setFeaturedService] = useState([])
   const [DataPanel, setDataPanel] = useState([])
   const [DigitalWallet, setDigitalWallet] = useState([])
+  const navigate = useNavigate()
 
   useEffect(() => {
     getUsers()
@@ -29,13 +30,17 @@ export function App() {
     getDigitalWallet()
   }, [])
 
+  const Logout = () => {
+    localStorage.removeItem('token');
+    navigate('/login')
+  }
 
   // ------------------ get Users ------------------
   const getUsers = async () => {
     const response = await axios.get("http://localhost:3002/users/users")
     setUsers(response.data)
     let userInfo = JSON.parse(localStorage.getItem("userInfo") || "{}")
-    setProfile(response.data.find((u : any) => u.user_id == userInfo.userId))
+    setProfile(response.data.find((u: any) => u.user_id == userInfo.userId))
     // console.log(Service);
   }
 
@@ -72,16 +77,18 @@ export function App() {
 
   const store = {
     users,
-    profile ,
+    profile,
     Service,
     DataPanel,
     featuredService,
     DigitalWallet,
+    Logout,
     ProfilePage,
     ServicePage,
     DataPanelPage,
     HomePage,
     DigitalWalletPage,
+
 
   }
 

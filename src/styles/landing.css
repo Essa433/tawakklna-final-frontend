@@ -28,6 +28,37 @@
 
 }
 
+.cont-vide-place {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 70px 0px 70px;
+}
+.h1-land{
+    font-size: 40px;
+}
+.h2-land{
+    font-size: 30px;
+    color: gray;
+cursor: pointer;
+}
+.h2-land:hover{
+    background-color: white;
+    cursor: pointer;
+    display: inline;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px 30px;
+    color: black;
+
+
+
+
+}
+.left-vid{
+    margin-left: 100px;
+}
 
 .btn-nav-log {
     display: flex;

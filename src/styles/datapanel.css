@@ -257,3 +257,10 @@ span {
     display: flex;
     align-items: center;
 }
+.aftar-services-box{
+    width: 50px;
+    height: 50px;
+}
+.descrypton-datapanel{
+    text-align: center;
+}

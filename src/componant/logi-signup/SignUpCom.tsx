@@ -10,7 +10,7 @@ export function SignUpComponant() {
 
     const navigate = useNavigate()
     const {users} = useContext(twkContext)
-    console.log(users);
+    // console.log(users);
     
 
     const handleSignUp = async (e: any) => {

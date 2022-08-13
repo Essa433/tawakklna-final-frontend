@@ -17,22 +17,24 @@ export function DatapanelComponant() {
 
     return (
         <>
-            <h1>Data Panel Page</h1>
             <div className='container-service-card'>
                 {DataPanel.map((DataPanel: any) => (
 
                     <div className='content-sub-box-servic'>
 
                         <div>
-                            {DataPanel.aftar}
+                            <img className='aftar-services-box' src={DataPanel.aftar} alt="" />
                         </div>
                         <div className='content-eduction-box'>
                             <h3> {DataPanel.Data_title}</h3>
-                        <hr />
+                            <hr />
                         </div>
-                        <div>
+                        <div className='descrypton-datapanel'>
+                            {DataPanel.descryption}
+                        </div>
+                        {/* <div>
                             {DataPanel.DataPanel_type}
-                        </div>
+                        </div> */}
 
 
                     </div>

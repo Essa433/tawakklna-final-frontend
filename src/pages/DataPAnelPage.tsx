@@ -5,8 +5,8 @@ import { ProfileCom } from "../componant/profile/profile";
 export function DataPanelPage() {
     return (
         <>
-        <Navbar/>
-            <h1>DataPanel Page</h1>
+            <Navbar />
+
             {/* --------------------------- profile----------------------- */}
 
             <ProfileCom />

@@ -24,14 +24,17 @@ export function FeaturedServiceComponant() {
                     <div className='content-sub-box-featured-servic'>
 
                         <div>
-                            {featuredService.aftar}
-                        </div>
-                        <div>
-                            {featuredService.service_title}
+                            <img className='aftar-services-box' src={featuredService.aftar} alt="" />
                         </div>
                         <div className='content-eduction-box'>
-                            <h3> {featuredService.service_type}</h3>
+                            <h3> {featuredService.service_title}</h3>
                         </div>
+                        <div>
+                            {featuredService.descryption}
+                        </div>
+                        {/* <div>
+                            {featuredService.service_type}
+                        </div> */}
                         {/* <div>
                             {featuredService.featured_service}
                         </div> */}

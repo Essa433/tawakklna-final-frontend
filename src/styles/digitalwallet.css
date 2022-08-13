@@ -1,6 +1,24 @@
 .container-digitalwallet-card{
     display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
+    flex-direction: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.contain-card-decument{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.phrogr-decumentaions{
+    font-size: 20px;
+font-weight: bold;
+
+
+}
+.decum-image{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
 }

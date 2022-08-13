@@ -19,51 +19,16 @@ export function DigitalWalletComponant() {
             <div className='container-digitalwallet-card'>
                 {DigitalWallet.map((DigitalWallet: any) => (
 
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    {DigitalWallet.Document_Type}
-                                </div>
-                                <div>
-                                    <img src={DigitalWallet.photo} alt="" />
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    {DigitalWallet.Document_Type}
-                                </div>
-                                <div>
-                                    <img src={DigitalWallet.photo} alt="" />
-                                </div>
+                    <div className="contain-card-decument">
 
-                            </div>
-
-
+                        <div className="phrogr-decumentaions">
+                            {DigitalWallet.Document_Type}
                         </div>
                         <div>
-
-                            <div>
-                                <div>
-                                    {DigitalWallet.Document_Type}
-                                </div>
-                                <div>
-                                    <img src={DigitalWallet.photo} alt="" />
-                                </div>
-
-
-                            </div>
-                            <div>
-                                <div>
-                                    {DigitalWallet.Document_Type}
-                                </div>
-                                <div>
-                                    <img src={DigitalWallet.photo} alt="" />
-                                </div>
-
-
-                            </div>
+                            <img className="decum-image" src={DigitalWallet.photo} alt="" />
                         </div>
+
+
 
                     </div>
 

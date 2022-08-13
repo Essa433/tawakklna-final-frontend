@@ -14,40 +14,64 @@ body {
   font-smoothing: antialiased;
 } */
 
-.cont-cont-homecomponent{
+.cont-cont-homecomponent {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.contain-task-home{
+
+.contain-task-home {
   margin: 60px 80px;
   padding: 5px 20px;
 }
-.featured-contain-home{
+
+/* .left-side-contain{
+  display: flex;
+  flex-direction: column;
+  ;
+} */
+.featured-contain-home {
   margin: 60px 80px;
   padding: 5px 20px;
 }
-.container-box-task{
+
+.container-box-task {
   display: flex;
   /* margin: 10px; */
   /* padding: 10px 20px; */
   gap: 20px;
 }
-.task-box{
+
+.task-box1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 5px 70px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaSY1ViAdC7SQJgh_pjiX0k8wL_EE2FnHparExZNf7PI8QGqPEdoJA42yixGbHZkkY5M&usqp=CAU);
+
 }
-.p-red-box{
+
+.task-box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  padding: 5px 70px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLFfRuTqizZzqU4g3ZVOgD49dRLjI_PIiBg&usqp=CAU);
+background-repeat: no-repeat;
+}
+
+.p-red-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: red;
   font-weight: bold;
 }
-.p-grean-box{
+
+.p-grean-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,12 +79,13 @@ body {
   font-weight: bold;
 }
 
-.up-feature-services-home{
+.up-feature-services-home {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  
+
 }
+
 .tariffCards {
   position: absolute;
   top: 40%;
@@ -70,7 +95,7 @@ body {
   transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
 }
- 
+
 .tariffCards:after {
   position: absolute;
   bottom: -27px;
@@ -104,7 +129,7 @@ body {
   height: 200%;
   /* background-image: linear-gradient(60deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 80%); */
   transform: translateX(-100%);
-  
+
 }
 
 .tariffCards>div img {
@@ -170,6 +195,7 @@ body {
   transform: translateX(50%);
   transition: all 1.2s ease-in-out;
 }
+
 /*
 a {
   position: fixed;

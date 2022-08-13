@@ -9,11 +9,11 @@ export function ProfileCom() {
     let userInfo = JSON.parse(localStorage.getItem("userInfo") || "{}")
     // const userProfile = users?.find((u: any) => u.user_id == userInfo.userId)
     // console.log(userInfo , users);
-    
+
     return (
 
 
-        <div>
+        <div className="container-profile-at-all" >
             {/* {users.map((users: any) => ( */}
 
             <div className="container-box-profile">
@@ -29,7 +29,6 @@ export function ProfileCom() {
                 <div className="sub-content">
 
                     <div>
-
                         <div>
                             <h4>Email</h4>
                             {profile.email}
@@ -46,13 +45,13 @@ export function ProfileCom() {
                             <h4>Nationality</h4>
                             {profile.nationalId}
                         </div>
+                    </div>
+                    <div>
                         <div>
                             <h4>Place of birth</h4>
                             {profile.place_birth}
                         </div>
-                    </div>
 
-                    <div>
 
                         <div>
                             <h4>Date of birth</h4>
@@ -66,6 +65,8 @@ export function ProfileCom() {
                             <h4>Nationality</h4>
                             {profile.nationality}
                         </div>
+                    </div>
+                    <div>
                         <div>
                             <h4>Blood type</h4>
                             {profile.blood_type}

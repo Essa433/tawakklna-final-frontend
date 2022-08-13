@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Questrial&family=Roboto+Mono:wght@100;200;400&display=swap');
 
+
+.container-profile-at-all{
+    
+text-align: center;
+}
+
 .container-box-profile {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 50px;
+    margin: 50px 100px;
     gap: 20px;
+    display: inline-flex;
 }
 
 .sub-content {
@@ -21,14 +29,15 @@
 
 .header-profile {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     gap: 60px;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .person-name-profile {

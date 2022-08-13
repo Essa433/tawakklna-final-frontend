@@ -5,6 +5,8 @@ import { useForm } from 'react-hook-form';
 import "../../styles/login.css"
 import { useContext } from "react";
 import { twkContext } from "../../Utils/TwkContext";
+
+
 export function LoginComponant() {
 	const navigate = useNavigate()
 	const { register, handleSubmit, formState: { errors } } = useForm();
@@ -20,9 +22,9 @@ export function LoginComponant() {
 			console.log(response);
 			let userFind = users.find((u: any) => u.nationalId == e.nationalId)
 			const userInfo = {
-				userId : userFind.user_id , 
-				nationalId : userFind.nationalId ,
-				role : response.data.role
+				userId: userFind.user_id,
+				nationalId: userFind.nationalId,
+				role: response.data.role
 			}
 			localStorage.setItem("userInfo", JSON.stringify(userInfo))
 			localStorage.setItem("token", response.data.token)
@@ -35,8 +37,8 @@ export function LoginComponant() {
 	return (
 		< >
 
-			<h1>I am Login Page</h1>
-			<form className="form-box-login" onSubmit={handleSubmit(handleLogin)}>
+
+			{/* <form className="form-box-login" onSubmit={handleSubmit(handleLogin)}>
 
 				<h3>Login</h3>
 
@@ -53,7 +55,32 @@ export function LoginComponant() {
 				<div>
 					<button>Login</button>
 				</div>
-			</form>
+			</form> */}
+
+			<div className="login-box">
+				<h2>Login</h2>
+				<form onSubmit={handleSubmit(handleLogin)}>
+					<div className="user-box">
+						<input type="text" {...register("nationalId", { required: true })} />
+						<label>National Id</label>
+						{errors.nationalId && <p>Please check the National Id</p>}
+					</div>
+
+					<div className="user-box">
+						<input type="password" {...register("password", { required: true })} />
+						<label>Password</label>
+					</div>
+					<button>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Submit
+					</button>
+				</form>
+			</div>
+
+
 		</>
 
 	)

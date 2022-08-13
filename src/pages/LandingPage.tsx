@@ -28,10 +28,28 @@ export function LandingPage() {
                 </div>
             </nav>
 
-            <div>
+            {/* <div className='cont-vide-place'> */}
+                {/* <div className='left-vid'>
+                    <h1 className='h1-land'>How is Tawakkalna Working</h1>
+                    <div>
+                    <h2 className='h2-land' >How to register in our trust?</h2>
+                    </div>
+                    <div>
+                    <h2 className='h2-land' >for individuals</h2>
+                    </div>
+                    <div>
+                    <h2 className='h2-land' >During the partial ban</h2>
+                    </div>
+                    <div>
+                    <h2 className='h2-land' >Express Delivery App Permits</h2>
+                    </div>
 
-                <img src="https://ta.sdaia.gov.sa/images/hero.png" alt="" />
-            </div>
+                </div> */}
+                <div>
+                    {/* <img src="https://ta.sdaia.gov.sa/images/hero.png" alt="" /> */}
+                    <iframe width="1683" height="670" vid-land src="https://www.youtube.com/embed/FN9JCUfLzzA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+            {/* </div> */}
             <div>
 
                 <img src="https://ta.sdaia.gov.sa/images/app.png" alt="" />
