@@ -17,14 +17,14 @@ export function LandingPage() {
                 </div>
                 <div className="sub-title-nav">
                     <Link style={{ textDecoration: 'none', color: 'gray' }} to="/">  <div>
-                        <p>Home Page</p>
+                        <p>الصفحة الرئيسية</p>
                     </div></Link>
                     <a className='about-twa-p' href="#container-about-about"><div >
-                        <p>About Tawakkalna</p>
+                        <p>عن توكلنا</p>
                     </div></a>
-                    <div>
-                        <p>Contact us</p>
-                    </div>
+                    <a className='about-twa-p' href="#contaner-vid">   <div>
+                        <p>طريقة عمله</p>
+                    </div></a>
                 </div>
 
                 <div className='btn-landing-page'>
@@ -38,10 +38,14 @@ export function LandingPage() {
 
                 <div>
                     <img className='img-1-header-landingpage' src="https://ta.sdaia.gov.sa/images/hero.png" alt="" />
+                    <div className='cont-left-on-img'>
+                        التصاريح الالكترونية لاحتياجاتك الضرورية
+                    </div>
                 </div>
+
                 <div className='btn-icons-cont'>
                     <div className='h1-h1-downlaod'>
-                        <h1> Download Tawakkalna App</h1>
+                        <h1> حمّل نطبيق توكلنا</h1>
                     </div>
                     <div className='btn-icons'>
 
@@ -66,15 +70,13 @@ export function LandingPage() {
                     <img className='mobile-photo' src="https://ta.sdaia.gov.sa/images/app.png" alt="" />
                 </div>
                 <div>
-                    <h1 className='h1-about'>About tawakklna</h1>
-                    <p className='p-about'>Proceeding from the keenness of the government of the Kingdom of Saudi Arabia - may God support it - to preserve the health and safety of citizens and residents on its lands from the danger of the spread of the new Corona virus; The Saudi Data and Artificial Intelligence Authority "Sdaya" has launched the "Tawakkalna" application, in order to support government efforts to confront the Corona virus.
+                    <h1 className='h1-about'>عن توكلنا</h1>
+                    <p className='p-about'>انطلاقًا من حرص حكومة المملكة العربية السعودية -أيدها الله- على الحفاظ على صحة وسلامة المواطنين والمقيمين على أراضيها من خطر انتشار فيروس كورونا المستجد؛ قامت الهيئة السعودية للبيانات والذكاء الاصطناعي "سدايا" بإطلاق تطبيق "توكلنا"، وذلك لمساندة الجهود الحكومية لمواجهة فيروس كورونا.
 
-                        At its inception, the “Tawakkalna” application aimed to contribute to managing the process of granting permits electronically during the curfew period, for employees of government sectors, employees of the private sector, in addition to individuals, in cooperation with the Ministry of Health and a number of government agencies during the imposed ban period, which helped reduce from the spread of the Corona virus in the Kingdom.
-
-                        During the cautious return phase, and the lifting of the ban measures, the application launched several important new services that contribute to achieving a safe return, most notably clarifying the health status of the application user through colored codes with the highest levels of security and privacy.</p>
+                        هدف تطبيق "توكلنا" في بدايته إلى المساهمة في إدارة عملية منح التصاريح إلكترونيًا خلال فترة منع التجول، وذلك لمنسوبي القطاعات الحكومية، ومنسوبي القطاع الخاص، بالإضافة إلى الأفراد، بالتعاون مع وزارة الصحة وعدد من الجهات الحكومية خلال فترة المنع المفروضة، مما ساعد في الحد من انتشار فيروس كورونا في المملكة.</p>
                 </div>
             </div>
-            <div>
+            <div id='contaner-vid'>
                 {/* <img src="https://ta.sdaia.gov.sa/images/hero.png" alt="" /> */}
                 <iframe width="1683" height="755" vid-land src="https://www.youtube.com/embed/FN9JCUfLzzA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe>
             </div>

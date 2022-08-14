@@ -173,8 +173,25 @@
 }
 
 .img-1-header-landingpage {
+    position: relative;
     width: 1000px;
     height: 650px;
+}
+.cont-left-on-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #00ab90;
+    top: -350px;
+    width: 850px;
+    height: 150px;
+    font-size: 45px;
+    border-radius: 0px 60px 60px 0px;
+    color: white;
+
+
+
 }
 
 .btn-icons {
@@ -192,7 +209,7 @@
 
 .h1-h1-downlaod {
     margin-top: 200px;
-    margin-left: -280px;
+    margin-left: 350px;
     /* color: #007865; */
     font-size: 20px;
 }
@@ -269,11 +286,16 @@
 }
 
 .h1-about {
-    font-size: 40px;
+    font-size: 45px;
     color: #007865;
+    margin-left: 570px;
 }
 
 .p-about {
+    display: flex;
+    text-align: end;
     font-size: 25px;
-    max-width: 70ch;
+    /* max-width: 70ch; */
+    color: gray;
+    margin-right:50px ;
 }
