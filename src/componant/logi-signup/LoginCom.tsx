@@ -3,6 +3,8 @@ import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import { useForm } from 'react-hook-form';
 import "../../styles/login.css"
+import "../../styles/signup.css"
+
 import { useContext } from "react";
 import { twkContext } from "../../Utils/TwkContext";
 
@@ -70,8 +72,8 @@ export function LoginComponant() {
 					</div>
 				</form>
 				<Link to="/sign-up"> <div className="contss">
-                    Go to sign up ?
-                </div></Link>
+					Go to sign up ?
+				</div></Link>
 			</div>
 
 

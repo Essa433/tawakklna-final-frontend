@@ -200,11 +200,13 @@
 }
 
 .contss {
+  margin-top: 20px;
+  text-align: center;
   color: black;
   text-decoration: underline;
   font-weight: bold;
 }
 
-.contss:hover {
+.contsss:hover {
   color: white;
 }
