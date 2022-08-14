@@ -13,6 +13,7 @@ import { twkContext } from './Utils/TwkContext';
 import { DigitalWalletPage } from './pages/DigitalWalletPage';
 import { SignupPage } from './pages/SignupPage';
 import { services } from './componant/date/serviceDate';
+import { NotFoundPage } from './pages/notFound';
 
 export function App() {
   const [users, setUsers] = useState([])
@@ -118,6 +119,8 @@ export function App() {
         <Route path='/services' element={<ServicePage />} />
         <Route path='/datapanel' element={<DataPanelPage />} />
         <Route path='/digitalwallet' element={<DigitalWalletPage />} />
+        <Route path='/*' element={<NotFoundPage />} />
+
 
       </Routes>
     </twkContext.Provider >
