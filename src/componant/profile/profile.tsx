@@ -55,11 +55,11 @@ export function ProfileCom() {
 
                             <div>
                                 <h4>Date of birth</h4>
-                                {profile.data_birth}
+                                {profile.date_birth}
                             </div>
                             <div>
                                 <h4>Phone Number</h4>
-                                {profile.phonenumber}
+                                {profile.phoneNumber}
                             </div>
                             <div>
                                 <h4>Nationality</h4>
@@ -92,20 +92,20 @@ export function ProfileCom() {
                 {/* ))} */}
             </div>
 
-            <div>
+            <div className="containser-pro">
                 <h1>My booked </h1>
                 {profile.services?.map((s: any) => (
-                    <div>
+                    <div className="profile-service">
 
                         <div>
                         <img src= {s.aftar} alt="" />   
                         </div>
                         <div>
-                            {s.service_title}
+                           <h2>{s.service_title}</h2> 
                         </div>
-                        <div>
-                            {s.service_type}
-                        </div>
+                        {/* <div>
+                           <h3>{s.service_type}</h3> 
+                        </div> */}
                     </div>
 
                 ))}

@@ -71,7 +71,7 @@ export function SignUpComponant() {
 
             <div className="signup-box">
                 <div>
-                    <img src="/TWK.png" alt="" width={100} height={100} />
+                    <img src="https://ta.sdaia.gov.sa/images/NewImages/logo.svg" alt="" width={100} height={100} />
                 </div>
                 <h2 className="h2-inthesign">Sign up</h2>
                 <form onSubmit={handleSignUp}>

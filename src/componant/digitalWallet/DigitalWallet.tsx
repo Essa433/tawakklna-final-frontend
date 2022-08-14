@@ -15,7 +15,6 @@ export function DigitalWalletComponant() {
 
 
 
-            <h1>Digital Wallet Page</h1>
             <div className='container-digitalwallet-card'>
                 {DigitalWallet.map((DigitalWallet: any) => (
 

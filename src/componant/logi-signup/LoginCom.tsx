@@ -1,6 +1,6 @@
 
 import axios from "axios"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useForm } from 'react-hook-form';
 import "../../styles/login.css"
 import { useContext } from "react";
@@ -41,7 +41,8 @@ export function LoginComponant() {
 
 			<div className="login-box">
 				<div className="img-logo">
-					<img src="/TWK.png" alt="" width={100} height={100} />
+					<img src="https://ta.sdaia.gov.sa/images/NewImages/logo.svg" alt="" width={100} height={100} />
+					{/* <img src="" alt="" width={100} height={100} /> */}
 				</div>
 				<h2 className="h2-loging">Login</h2>
 				<form onSubmit={handleSubmit(handleLogin)}>
@@ -52,22 +53,25 @@ export function LoginComponant() {
 					</div>
 
 					<div className="user-box">
-						<input type="password" {...register("password", { required: true,  })} />
+						<input type="password" {...register("password", { required: true, })} />
 						<label>Password</label>
 						{errors.password && <p>Please check the National Id</p>}
 
 					</div>
 					<div className="btn-gocennn">
 
-					<button className="btn-login-login-w">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						Submit
-					</button>
+						<button className="btn-login-login-w">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Submit
+						</button>
 					</div>
 				</form>
+				<Link to="/sign-up"> <div className="contss">
+                    Go to sign up ?
+                </div></Link>
 			</div>
 
 

@@ -166,7 +166,8 @@
     bottom: 100%;
   }
 }
-.btn-login-login-w{
+
+.btn-login-login-w {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -179,18 +180,31 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.btn-login-login-w:hover{
-  background-color:#1fa99a ;
+
+.btn-login-login-w:hover {
+  background-color: #1fa99a;
   color: #fff;
   border: none;
 }
-.img-logo{
+
+.img-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn-gocennn{
+
+.btn-gocennn {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contss {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.contss:hover {
+  color: white;
 }

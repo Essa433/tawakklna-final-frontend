@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    margin-left: 300px;
+    margin-top: 80px;
+    gap: 50px;
 
 
 }

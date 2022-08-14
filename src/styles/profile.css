@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Questrial&family=Roboto+Mono:wght@100;200;400&display=swap');
 
 
-.container-profile-at-all{
-    
-text-align: center;
+.container-profile-at-all {
+
+    text-align: center;
 }
 
 .container-box-profile {
@@ -44,4 +44,26 @@ text-align: center;
     font-family: 'Pacifico', cursive;
     font-family: 'Questrial', sans-serif;
     font-family: 'Roboto Mono', monospace;
+}
+
+
+.containser-pro {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 220px; */
+    margin: 0px 235px 40px ;
+}
+.profile-service {
+    display: flex;
+    /* flex-direction: column; */
+    
+    /* display: -webkit-inline-box; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
 }

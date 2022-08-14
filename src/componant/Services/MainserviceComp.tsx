@@ -15,7 +15,7 @@ import axios from 'axios';
 
 
 export default function ServicesComponant() {
-    const { Service, users } = useContext(twkContext)
+    const { Service, users, serviceSearch, ServiceFilter } = useContext(twkContext)
     let userInfo = JSON.parse(localStorage.getItem("userInfo") || "")
     let userFound = users?.find((u: any) => u.user_id == userInfo.userId)
     let serviceTitle = userFound?.services.map((s: any) => s.service_title)
@@ -65,129 +65,139 @@ export default function ServicesComponant() {
         <>
             <div className='contain-contain-services'>
                 <div>
-                    <div className='search-inservice'>
-                        <h1 className='text-h3'>Public service</h1>
+                    <form className='form-search-service' onSubmit={serviceSearch}>
                         <div>
                             <input className="search-ser" type="search" name="search" placeholder="Search..." />
+                            <button className="btn-service-search">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+
+
+                    <div>
+
+
+                        <div className='search-inservice'>
+                            <h1 className='text-h3'>Public service</h1>
+
+                        </div>
+                        <div className='container-service-card'>
+                            {publicService.map((Service: any) => (
+                                <div className='content-sub-box-servic'>
+                                    <div>
+                                        <img className='aftar-services-box' src={Service.aftar} alt="" />
+                                    </div>
+                                    {Service.service_title == "digital wallet" ?
+                                        (<Link style={{ textDecoration: 'none', color: "black" }} to={"/digitalwallet"}><div className='content-eduction-box nav-link'>
+                                            <h3> {Service.service_title}</h3>
+                                        </div></Link>) : <div className='content-eduction-box'>
+                                            <h3> {Service.service_title}</h3>
+                                        </div>}
+
+                                    <div>
+                                        {Service.descryption}
+                                    </div>
+                                    {/* {Service.service_title == "Umrah Permits" ? */}
+                                    {/* <a href="https://www.haj.gov.sa/ar/InternalPages/Umrah"> <h3> {Service.service_title}</h3>
+                        </a> */}
+                                    {Service.service_title == "Umrah Permits" ? (<a href='https://www.haj.gov.sa/ar/InternalPages/Umrah'>{Service.service_title}</a>) : 'not'}
+
+
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <h1 className='text-h3'>Health services</h1>
+                        <div className='container-service-card'>
+                            {healthService.map((Service: any) => (
+                                <div className='content-sub-box-servic'>
+                                    <div>
+                                        <img className='aftar-services-box' src={Service.aftar} alt="" />
+                                    </div>
+                                    <div className='content-eduction-box'>
+                                        <h3> {Service.service_title}</h3>
+                                    </div>
+                                    <div>
+                                        {Service.descryption}
+                                    </div>
+
+                                    {/* <div>
+                            {Service.service_type}
+                        </div> */}
+                                    {/* <div>
+                            {Service.featured_service}
+                        </div> */}
+
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <h1 className='text-h3'>Education services</h1>
+                        <div className='container-service-card'>
+                            {educationService.map((Service: any) => (
+                                <div className='content-sub-box-servic'>
+                                    <div>
+                                        <img className='aftar-services-box' src={Service.aftar} alt="" />
+                                    </div>
+                                    <div className='content-eduction-box'>
+                                        <h3> {Service.service_title}</h3>
+                                    </div>
+                                    <div>
+                                        {Service.descryption}
+                                    </div>
+
+                                    {/* <div>
+                            {Service.service_type}
+                        </div> */}
+                                    {/* <div>
+                            {Service.featured_service}
+                        </div> */}
+
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+
+                        <h1 className='text-h3'>Faaliat services</h1>
+                        <div className='container-service-card'>
+                            {faaliat.map((Service: any) => (
+                                <div className='content-sub-box-servic'>
+                                    <div>
+                                        <img className='aftar-services-box' src={Service.aftar} alt="" />
+                                    </div>
+                                    {Service.service_title == "Tathkerah bolivard" ? (<div className='content-eduction-box'>
+                                        <Popup trigger={<h3> {Service.service_title}</h3>} position="right center">
+                                            <div className='popup-falliat'>
+                                                <h3>{Service.service_title}</h3>
+                                                <p>{Service.descryption}</p>
+
+                                                {serviceTitle.includes(Service.service_title) ?
+                                                    (<button className='btn-pupup'>You Already Booked !</button>) :
+                                                    (<button onClick={() => bookFaliah(Service)} className='btn-pupup'>Book now!</button>)}
+                                            </div>
+                                        </Popup>
+
+                                    </div>) : null}
+
+                                    <div>
+                                        {Service.descryption}
+                                    </div>
+
+
+                                </div>
+                            ))}
                         </div>
 
+
                     </div>
-                    <div className='container-service-card'>
-                        {publicService.map((Service: any) => (
-                            <div className='content-sub-box-servic'>
-                                <div>
-                                    <img className='aftar-services-box' src={Service.aftar} alt="" />
-                                </div>
-                                {Service.service_title == "digital wallet" ?
-                                    (<Link style={{ textDecoration: 'none', color: "black" }} to={"/digitalwallet"}><div className='content-eduction-box nav-link'>
-                                        <h3> {Service.service_title}</h3>
-                                    </div></Link>) : <div className='content-eduction-box'>
-                                        <h3> {Service.service_title}</h3>
-                                    </div>}
-
-                                <div>
-                                    {Service.descryption}
-                                </div>
-                                {/* {Service.service_title == "Umrah Permits" ? */}
-                                {/* <a href="https://www.haj.gov.sa/ar/InternalPages/Umrah"> <h3> {Service.service_title}</h3>
-                        </a> */}
-                                {Service.service_title == "Umrah Permits" ? (<a href='https://www.haj.gov.sa/ar/InternalPages/Umrah'>{Service.service_title}</a>) : 'not'}
-
-
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div>
-
-                    <h1 className='text-h3'>Health services</h1>
-                    <div className='container-service-card'>
-                        {healthService.map((Service: any) => (
-                            <div className='content-sub-box-servic'>
-                                <div>
-                                    <img className='aftar-services-box' src={Service.aftar} alt="" />
-                                </div>
-                                <div className='content-eduction-box'>
-                                    <h3> {Service.service_title}</h3>
-                                </div>
-                                <div>
-                                    {Service.descryption}
-                                </div>
-
-                                {/* <div>
-                            {Service.service_type}
-                        </div> */}
-                                {/* <div>
-                            {Service.featured_service}
-                        </div> */}
-
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div>
-
-                    <h1 className='text-h3'>Education services</h1>
-                    <div className='container-service-card'>
-                        {educationService.map((Service: any) => (
-                            <div className='content-sub-box-servic'>
-                                <div>
-                                    <img className='aftar-services-box' src={Service.aftar} alt="" />
-                                </div>
-                                <div className='content-eduction-box'>
-                                    <h3> {Service.service_title}</h3>
-                                </div>
-                                <div>
-                                    {Service.descryption}
-                                </div>
-
-                                {/* <div>
-                            {Service.service_type}
-                        </div> */}
-                                {/* <div>
-                            {Service.featured_service}
-                        </div> */}
-
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div>
-
-                    <h1 className='text-h3'>Faaliat services</h1>
-                    <div className='container-service-card'>
-                        {faaliat.map((Service: any) => (
-                            <div className='content-sub-box-servic'>
-                                <div>
-                                    <img className='aftar-services-box' src={Service.aftar} alt="" />
-                                </div>
-                                {Service.service_title == "Tathkerah bolivard" ? (<div className='content-eduction-box'>
-                                    <Popup trigger={<h3> {Service.service_title}</h3>} position="right center">
-                                        <div className='popup-falliat'>
-                                            <h3>{Service.service_title}</h3>
-                                            <p>{Service.descryption}</p>
-
-                                            {serviceTitle.includes(Service.service_title) ?
-                                                (<button className='btn-pupup'>You Already Book !</button>) :
-                                                (<button onClick={() => bookFaliah(Service)} className='btn-pupup'>Book now!</button>)}
-                                        </div>
-                                    </Popup>
-
-                                </div>) : null}
-
-                                <div>
-                                    {Service.descryption}
-                                </div>
-
-
-                            </div>
-                        ))}
-                    </div>
-
-
-
                 </div>
             </div>
         </>

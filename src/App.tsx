@@ -12,11 +12,13 @@ import { DataPanelPage } from './pages/DataPAnelPage';
 import { twkContext } from './Utils/TwkContext';
 import { DigitalWalletPage } from './pages/DigitalWalletPage';
 import { SignupPage } from './pages/SignupPage';
+import { services } from './componant/date/serviceDate';
 
 export function App() {
   const [users, setUsers] = useState([])
   const [profile, setProfile] = useState({})
   const [Service, setService] = useState([])
+  const [ServiceFilter, setServiceFilter] = useState({})
   const [featuredService, setFeaturedService] = useState([])
   const [DataPanel, setDataPanel] = useState([])
   const [DigitalWallet, setDigitalWallet] = useState([])
@@ -47,10 +49,17 @@ export function App() {
     // console.log(Service);
   }
 
-  
+
 
   // ------------- services -------------------------
 
+  const serviceSearch = (e: any) => {
+    e.preventDefault()
+    const form = e.target
+    let servicesTitle = Service?.map((s: any) => s.service_title)
+    let servicesFilter = Service?.filter((s: any) => s.service_title == form.elements.search.value)
+    setService(servicesFilter)
+  }
   // ---------- get services -----------------
   const getService = async () => {
     const response = await axios.get("http://localhost:3002/service/services")
@@ -93,8 +102,7 @@ export function App() {
     DataPanelPage,
     HomePage,
     DigitalWalletPage,
-
-
+    serviceSearch
   }
 
 
