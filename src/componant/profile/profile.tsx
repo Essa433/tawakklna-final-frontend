@@ -94,11 +94,13 @@ export function ProfileCom() {
 
             <div className="containser-pro">
                 <h1>My booked </h1>
-                {profile.services?.map((s: any) => (
-                    <div className="profile-service">
+                <div className="profil-ser-cont">
 
+                {profile.services?.map((s: any) => (
+                    
+                    <div className="profile-service">
                         <div>
-                        <img src= {s.aftar} alt="" />   
+                        <img className="aftar-booked" src= {s.aftar} alt="" />   
                         </div>
                         <div>
                            <h2>{s.service_title}</h2> 
@@ -109,6 +111,7 @@ export function ProfileCom() {
                     </div>
 
                 ))}
+                </div>
             </div>
         </>
 

@@ -185,7 +185,16 @@ export default function ServicesComponant() {
                                             </div>
                                         </Popup>
 
-                                    </div>) : null}
+                                    </div>) : <Popup trigger={<h3> {Service.service_title}</h3>} position="right center">
+                                            <div className='popup-falliat'>
+                                                <h3 className='h3-serr'>{Service.service_title}</h3>
+                                                <p>{Service.descryption}</p>
+
+                                                {serviceTitle.includes(Service.service_title) ?
+                                                    (<button className='btn-pupup'>You Already Booked !</button>) :
+                                                    (<button onClick={() => bookFaliah(Service)} className='btn-pupup'>Book now!</button>)}
+                                            </div>
+                                        </Popup>}
 
                                     <div>
                                         {Service.descryption}

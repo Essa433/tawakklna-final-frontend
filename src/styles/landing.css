@@ -31,7 +31,8 @@
 
 
 }
-.about-twa-p{
+
+.about-twa-p {
     text-decoration: none;
     color: gray;
 }
@@ -129,13 +130,16 @@
 
 
 }
-.btn-icon-store-apple:hover{
+
+.btn-icon-store-apple:hover {
     opacity: 0.5;
 }
-.btn-icon-store-sum:hover{
+
+.btn-icon-store-sum:hover {
     opacity: 0.5;
 }
-.btn-icon-store-huaw:hover{
+
+.btn-icon-store-huaw:hover {
     opacity: 0.5;
 }
 
@@ -177,14 +181,15 @@
     width: 1000px;
     height: 650px;
 }
-.cont-left-on-img{
+
+.cont-left-on-img {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-color: #00ab90;
-    top: -350px;
-    width: 850px;
+    top: -400px;
+    width: 900px;
     height: 150px;
     font-size: 45px;
     border-radius: 0px 60px 60px 0px;
@@ -208,7 +213,7 @@
 }
 
 .h1-h1-downlaod {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 350px;
     /* color: #007865; */
     font-size: 20px;
@@ -261,7 +266,7 @@
     cursor: pointer;
     background-color: transparent;
     border: 3px solid #007865;
-    color:#007865
+    color: #007865
 }
 
 .btn-nav-sin:hover {
@@ -297,5 +302,5 @@
     font-size: 25px;
     /* max-width: 70ch; */
     color: gray;
-    margin-right:50px ;
+    margin-right: 50px;
 }
