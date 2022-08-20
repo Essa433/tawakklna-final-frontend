@@ -1,3 +1,2 @@
 ## Deployment Url
-shorturl.at/eMNR8
-
+https://tawakklna-final-frontend1-npab7vz6t-essa433.vercel.app/
