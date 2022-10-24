@@ -42,7 +42,7 @@ export function ProfileCom() {
                                 {profile.role}
                             </div>
                             <div>
-                                <h4>Nationality</h4>
+                                <h4>National Id</h4>
                                 {profile.nationalId}
                             </div>
                         </div>

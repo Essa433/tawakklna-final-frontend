@@ -100,7 +100,7 @@ export function SignUpComponant() {
                                 <label>Age</label>
                             </div>
                             <div className="user-box">
-                                <input type="text" name="DateBrith" />
+                                <input type="date" name="DateBrith" id="date" />
                                 <label>Date of bitrth</label>
                             </div>
                         </div>
@@ -127,19 +127,31 @@ export function SignUpComponant() {
                                 <label>photo</label>
                             </div>
                             <div className="contain-select" >
+
                                 <div >
 
-                                    <select className="marid-box" name="Marital">
-                                        <option value="Married"> Married</option>
-                                        <option value="Single"> Single</option>
+                                    {/* <p className="marid-box">jjj</p>
+                                        <input type="radio" value="Married" name="Marital" />
+                                        <label htmlFor="Married">Married</label>
+                                        <input type="radio" value="single" name="Marital" />
+                                        <label htmlFor="single">Single</label> */}
+
+
+                                    <select className="marid-box" name="gender">
+                                        <option value="Male"> Male</option>
+                                        <option value="Female"> Female</option>
                                     </select>
                                     {/* <label>Name</label> */}
                                 </div>
 
+
+
                                 <div >
-                                    <select className="marid-box" name="gender">
-                                        <option value="Male"> Male</option>
-                                        <option value="Female"> Female</option>
+                                    <select className="marid-box" name="Marital">
+                                    <option value="Married"> Married</option>
+                                        <option value="Single"> Single</option>
+                                        {/* <option value="Male"> Male</option>
+                                        <option value="Female"> Female</option> */}
                                     </select>
                                     {/* <label>Name</label> */}
                                 </div>

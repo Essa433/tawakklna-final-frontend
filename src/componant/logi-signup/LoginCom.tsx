@@ -57,7 +57,7 @@ export function LoginComponant() {
 					<div className="user-box">
 						<input type="password" {...register("password", { required: true, })} />
 						<label>Password</label>
-						{errors.password && <p>Please check the National Id</p>}
+						{errors.password && <p>Please check the Password</p>}
 
 					</div>
 					<div className="btn-gocennn">
